@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+}
+
+:root {
+  align-items: center;
+}
+html,
+body {
+  height: 100%; 
+  width: 100%;
+  background-image: url("../images/bckg1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+div image {
+  transform: scale();
+}
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 6px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+  background-color: #05191d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+  opacity: 0.8;
+  }
+/************************ index page ************************/
+.mc_index{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.4fr 4.4fr 0.2fr;
+    grid-template-areas:
+      "hup hup"
+      "tsignin tlandmain"
+      "fdown fdown";
+      width: 100%;
+      height: 100%;
+      top: 0; 
+      position: absolute;
+      min-height: 100vh;
+    background-color: rgba(50, 48, 65, 0.5);         
+    color: #fcfbfc; 
+}
+.navheadindex {
+  grid-area: hup;
+  width: 100%;
+  top: 0;
+  cursor: pointer; 
+  height: 100%;
+  display: flex;
+  flex-direction: row; 
+  color: #f2f2f2;
+  font: auto;
+}
+.navheadindex a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.navheadindex a:hover {
+  color: hwb(213 91% 5%);
+  font-size: auto;
+  font-weight: bold;
+}
+.navheadindex a:first-child{
+  margin-top: 0.5%;
+  left: 1%;
+  position: absolute;
+}
+.navheadindex a:last-child{
+  right: 4%;
+  position: absolute;
+}
+.landcontent{
+  grid-area: tlandmain;
+}
+.signup{
+  grid-area: tsignin;
+  height: 90%;
+  background-color: rgba(50, 48, 65, 0.5);
+}
+.signbox{
+  display:flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;  
+text-align: center; 
+justify-content: center;
+}
+#signupheader{
+height:10%;
+width: 100%;
+}
+.tform{
+    font-size: auto;
+    height: 100%;
+    width: 100%; 
+  }
+  .imgcontainer{
+    height: 20%;
+    align-items: center;
+    text-align: center;
+
+  }
+  #signcontainer{
+    flex-direction: column;
+    display: flex;
+    height: 60%;
+    justify-content: space-around; 
+  }
+  #signcontainer2{
+    height: 20%;
+  }
+  .cancelbtn {
+    width: 70%;
+  }
+   
+  /* Avatar image */
+  img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  height:95%;
+  }
+  
+  /*************************common pages***********************/
+  
+  /* footer */
+.navfooter {
+  grid-area: fdown;
+  background-color: rgba(50, 48, 65, 0.5);         
+  bottom: 0;
+  color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+}
+/* header */
+.navheader {
+  grid-area: hup;
+  background-color: rgba(50, 48, 65, 0.5);         
+  width: 100%;
+  top: 0;
+  cursor: pointer; 
+  height: 100%;
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "blogo navr";
+}
+
+div.navheader ul{
+  grid-area: navr;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+div.navheader li, div.navheader a{
+color: #f2f2f2;
+  padding: 1vh 1vw;
+  text-align: center;
+  text-decoration: none;
+  font-size: auto;
+}
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .dropdown-content a:hover {
+    background-color: brown;
+  }
+  
+  /* Show the dropdown menu when the button is hovered over */
+  .dropdown:hover div.dropdown-content {
+    display: block;
+    z-index: 1;
+  }
+  /* Style the dropdown container (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(50, 48, 65, 0.5);         
+  min-width: 80px;
+}
+
+/* sidenav */
+.sidDiv {
+  background-color: rgba(50, 48, 65, 0.5);
+  grid-area: tside;
+  height: 100%;
+}
+div.sidDiv ul {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  justify-content: space-between;
+  position: relative;
+  height: 96%;
+  top: 2%;
+  bottom: 2%;
+}
+div.sidDiv li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+  border-bottom: 1px solid hwb(0 91% 5%);
+}
+div.sidDiv li:last-child {
+  border-bottom: none;
+}
+div.sidDiv li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: auto;
+  font-size: auto;
+  justify-content: center;
+}
+div.sidDiv li a:hover,
+li a:hover {
+  color: hwb(213 91% 5%);
+  font-size: auto;
+  font-weight: bold;
+}
+  
+ 
+  /*********************all other pages *************************/
+ /* main container */
+.mc {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 0.4fr 4.4fr 0.2fr;
+  grid-template-areas:
+    "hup hup"
+    "tside tmain"
+    "fdown fdown";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  min-height: 100vh;
+  grid-gap: 0;
+  z-index: 1;
+}
+  /* inner container */
+   .mc_tmain{
+    display: grid;
+    grid-area: tmain;
+    grid-gap: 1rem;    
+    height: 95%;
+    margin: 1rem; 
+    color: #fcfbfc; 
+   }
+   /* inner container user grid division */
+   #dashuser{
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 'aroom ureserve ucalendar';
+   }
+   #myreservuser{
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 'proom curroom futureroom';
+   }
+   #makereservuser{
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'utime udetails';
+   }
+   #helpuser{
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'ctents details';
+   }
+   .helplinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+   .helplinks li{
+    color: white;
+    font-weight:500;
+}
+   .helplinks li:hover{
+    display: block;
+    color: hwb(213 91% 5%);
+  font-size: auto;
+  font-weight: bold; 
+   }
+   /* inner container grid style */
+   div.smalldiv , .smalldiv {
+    background-color: rgba(50, 48, 65, 0.5);         
+    border-radius: 25px; 
+    height: 100%;
+    width: 100%;
+    }
+    
+    /********************************************************/
+    div.smalldivheader {      
+  height: 15%;
+  width: 100%;
+    }
+    div.smalldivmain {
+      display: flex;
+align-items: center;  
+text-align: center; 
+justify-content: center; 
+  height: 85%;
+  width: 100%;
+    }
+
+#cit{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+text-align: center; 
+justify-content: center;
+width: 100%;
+height: 100%;
+position: relative;
+}
+
